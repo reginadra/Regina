@@ -11,7 +11,7 @@ int guess;
 int answer;
 
 printf("Welcome!\n\n");
-printf("Think of a number betwenn %d and %d, I will guess it!\n\n",range_start,range_end);
+printf("Think of a number between %d and %d, I will guess it!\n\n",range_start,range_end);
 
 do
 {
