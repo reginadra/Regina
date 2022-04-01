@@ -14,8 +14,8 @@ int main(void)
     // Fix format string to also avoid overflow.
     // See man 3 scanf or https://www.man7.org/linux/man-pages/man3/scanf.3.html#EXAMPLES
 	
-	// scanf("%[^\n]s", name);
-	fgets(name, sizeof(name), stdin); // Regina
+    // scanf("%[^\n]s", name);
+    fgets(name, sizeof(name), stdin); // Regina
 
     strcat(s, name);
     strcat(s, "!");
