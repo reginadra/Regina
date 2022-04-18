@@ -23,7 +23,7 @@ int main(int argc, const char *argv[])
   // Regina
   char a[tot]; // or a[tot + 1] and a[0] = 0 as above?
   for(int i = 0; i < argc; ++i)
-	  strcat(a , argv[i]); // concatenates command line arguments
+	  strcat(a, argv[i]); // concatenates command line arguments
   
   printf("%s\n", a); // print string
 
