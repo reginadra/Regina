@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// error when compiling code 
+// error when compiling code, solved by using malloc in line 24 instead of char a[tot]
 
 int main(int argc, const char *argv[])
 {
@@ -20,10 +20,11 @@ int main(int argc, const char *argv[])
   // "./a.out" "1" "2" "3" "456" -- strcat --> "./a.out 1 2 3 456"
   // puts(a);
   
-  // Regina
-  char a[tot]; // or a[tot + 1] and a[0] = 0 as above?
+  // Regina 
+  char *a = malloc(tot); 
+  a[0] = '\0'; // to avoid garbage 
   for(int i = 0; i < argc; ++i)
-	  strcat(a, argv[i]); // concatenates command line arguments
+	  strcat(a , argv[i]); // concatenates command line arguments
   
   printf("%s\n", a); // print string
 
