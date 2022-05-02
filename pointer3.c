@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 // error when compiling code, solved by using malloc in line 24 instead of char a[tot]
 
@@ -27,6 +28,7 @@ int main(int argc, const char *argv[])
 	  strcat(a , argv[i]); // concatenates command line arguments
   
   printf("%s\n", a); // print string
-
+  
+  free(a);	
   return 0;
 }
