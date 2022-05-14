@@ -1,5 +1,6 @@
 #include "module1.h"
 #include "module2.h"
+#include <stdio.h>
 
 void println_float_fields(double f)
 {
