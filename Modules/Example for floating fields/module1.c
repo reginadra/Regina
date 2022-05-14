@@ -1,4 +1,5 @@
 #include "module1.h"
+#include <stdio.h>
 
 void print_bits(unsigned long long v, int width)
 {
