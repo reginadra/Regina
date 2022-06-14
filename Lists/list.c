@@ -55,31 +55,31 @@ void l_print(List l)
 
 List l_insert_to(List l, int ind, int v)
 {
-	if(!ind)
+    if(!ind)
         return l_prepend(l, v);
     else
-	{
-		List c = l;
+    {
+    	List c = l;
         while(--ind)
             c = c->next;
-		c->next = l_prepend(c->next,v);
-		return l;
-	}
+	c->next = l_prepend(c->next,v);
+	return l;
+    }
 }
 
 List l_insert_keep_sorting(List l, int v)
 {
-	if(!l)
+    if(!l)
         return l_prepend(l, v);
     else
-	{
-		int ind = 0;
-		List c = l;
+    {
+	int ind = 0;
+	List c = l;
         while(c->next)
-			if(c->value > v)
-				return l_insert_to(l, ind, v);
-			c = c->next;
-			ind++;
-		return l_insert_to(l, ind+1, v);
-	}
+		if(c->value > v)
+			return l_insert_to(l, ind, v);
+		c = c->next;
+		ind++;
+	return l_insert_to(l, ind+1, v);
+    }
 }
