@@ -8,11 +8,14 @@ struct Person
 
 void read()
 {
-  struct Person ps[4];
+  struct Person ps[2];
 	
   FILE *fi = fopen("1.bin", "rb");
 	
-  fread(ps, sizeof(struct Person), 4, fi);
+  fread(ps, sizeof(struct Person), 2, fi);
+	
+  printf("%s ...... %d\n", ps[0].name, ps[0].age);
+  printf("%s ...... %d\n", ps[1].name, ps[1].age);
 	
   fclose(fi);
 }
