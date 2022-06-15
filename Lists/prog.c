@@ -21,20 +21,20 @@ int main()
     
     l = l_insert_to(l, 2, 4);
     l_print(l);
-	l = l_insert_to(l, 6, 15);
-	l_print(l);
+    l = l_insert_to(l, 6, 15);
+    l_print(l);
 	
-	l = l_insert_keep_sorting(l, 8);
-	l_print(l);
+    l = l_insert_keep_sorting(l, 8);
+    l_print(l);
 	
-	l = l_insert_keep_sorting(l, 18);
-	l_print(l);
+    l = l_insert_keep_sorting(l, 18);
+    l_print(l);
 	
-	l = l_remove(l, 3);
+    l = l_remove(l, 3);
     l_print(l);
     
     l = l_insert_keep_sorting(l, 5);
-	l_print(l);
+    l_print(l);
     
     // deallocate list elements one by one
     while(l)
